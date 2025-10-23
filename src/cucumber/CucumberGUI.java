@@ -155,7 +155,6 @@ public class CucumberGUI extends JFrame {
 							@Override
 							public void run() {
 								
-								J
 								System.exit(0);
 								
 							}
