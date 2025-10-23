@@ -31,7 +31,7 @@ public class CucumberGUI extends JFrame {
 		
 		setResizable(false);
 		
-		setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
 		addComponents();
 	}
@@ -143,8 +143,10 @@ public class CucumberGUI extends JFrame {
 			public void actionPerformed(ActionEvent e) {
 				
 				try {
+					
 					Desktop desktop = Desktop.getDesktop();
 					desktop.open(selectedFile);
+					setVisible(false);
 					
 					try {
 						
@@ -155,10 +157,11 @@ public class CucumberGUI extends JFrame {
 							@Override
 							public void run() {
 								
+								
 								System.exit(0);
 								
 							}
-						}, t * 100);
+						}, t * 1000 * 60);
 						
 						
 					}catch(Exception a) {

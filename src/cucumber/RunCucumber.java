@@ -13,6 +13,8 @@ public class RunCucumber {
 				
 				try {
 					
+					UIManager.setLookAndFeel("com.jtattoo.plaf.smart.SmartLookAndFeel");
+					
 					new CucumberGUI().setVisible(true);
 					
 					
