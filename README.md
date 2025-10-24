@@ -3,4 +3,5 @@ This application is putting a run timer for selected app and with selected time 
 The reason I made this app is because I couldn't find a way to limit my cousine's gaming.
 He is playing cracked games and you can't put a time on cracked games in legal way like using Steam family or Microsoft family etc.
 Right now it is not really effective but I can make it forecfully useable.
+-
 <img src = "img/screen_shot.png" width = "300" height = "400">
