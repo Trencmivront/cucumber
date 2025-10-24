@@ -17,7 +17,7 @@ public class CucumberGUI extends JFrame {
 	private JFileChooser fileChooser = new JFileChooser();
 	private File selectedFile;
 	private ProcessBuilder app;
-	
+
 	public int t = 0;
 	
 	CucumberGUI(){
