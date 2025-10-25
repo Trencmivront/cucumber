@@ -1,16 +1,14 @@
 package cucumber;
 
-import java.awt.BorderLayout;
-import java.awt.Desktop;
-import java.awt.Font;
+import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 import javax.swing.*;
+import java.awt.*;
 
 public class CucumberGUI extends JFrame {
 	
@@ -32,6 +30,13 @@ public class CucumberGUI extends JFrame {
 		setResizable(false);
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		
+		try {
+			Image cucumber = Toolkit.getDefaultToolkit().getImage("/img/cucumber.png");
+			setIconImage(cucumber);
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
 		
 		addComponents();
 	}
