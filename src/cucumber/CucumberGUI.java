@@ -31,8 +31,10 @@ public class CucumberGUI extends JFrame {
 		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
+		setTitle("Welcome " + System.getProperty("user.name"));
+		
 		try {
-			Image cucumber = Toolkit.getDefaultToolkit().getImage("/img/cucumber.png");
+			Image cucumber = Toolkit.getDefaultToolkit().getImage("/img/cucumber.jpg");
 			setIconImage(cucumber);
 		}catch(Exception e) {
 			e.printStackTrace();
